@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 60,
+      "includeFiles": ["node_modules/ffmpeg-static/**", "node_modules/ffprobe-static/**"]
+    }
+  },
+  "crons": [
+    { "path": "/api/cron", "schedule": "0 2 * * *" }
+  ]
+}
